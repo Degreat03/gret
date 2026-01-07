@@ -1,0 +1,1021 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html, body{
+    overflow-x: hidden;
+    scroll-behavior: smooth
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+header{
+    background: #D92394;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    /* position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0; */
+}
+
+.logo a{
+    font-size: 1.2rem;
+    background-color: white;
+    border-radius: 70%;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    color: #f6099b;
+    text-decoration: none;
+}
+
+#nav-bars li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 25px;
+}
+
+
+
+#nav-bars li{
+    display: inline-flex;
+    position: relative;
+    
+}
+
+#nav-bars li a{
+    display: block;
+    padding: 20px 25px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
+#nav-bars li .dropdown{
+    display: none;
+    position: absolute;
+    top: 3rem;
+    z-index: 1;
+    background-color: #7e0b52;
+    text-align: center;
+}
+
+#nav-bars li .click{
+    display: none;
+    position: absolute;
+    top: 3rem;
+    z-index: 1;
+    background-color: #7e0b52;
+    text-align: center;
+}
+
+
+#nav-bars li:hover .dropdown{
+    display: block;
+}
+
+#nav-bars li:hover .click{
+    display: block;
+}
+
+.click li:hover, .dropdown li:hover{
+    background-color: #8b165f;
+    z-index: 1;
+}
+
+.click a:active, .dropdown a:active{
+    background-color: #db138e;
+    width: 100%;
+}
+
+.button a{
+    background-color: white;
+    text-decoration: none;
+    color: #fa009a;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+
+}
+
+.button a:hover{
+    background-color: #973973;
+}
+
+.button a:active{
+    background-color: #bd3c8b;
+}
+
+.team h2{
+    position: relative;
+    top: 2rem;
+    text-align: center;
+    color: #fa009a9d;
+    font-size: 4rem;
+}
+
+.team-container{
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    position: relative;
+    left: 20rem;
+    top: 2rem;
+    gap: 20px;
+    margin: 50px;
+}
+
+
+
+.staff2 img{
+    width: 20rem;
+    height: 25rem;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.staff2 img:hover{
+    scale: 1.02;
+}
+
+.staff1 img{
+    width: 20rem;
+    height: 25rem;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.staff1 img:hover{
+    scale: 1.02;
+}
+
+.staff3 img{
+    width: 20rem;
+    height: 25rem;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.staff3 img:hover{
+    scale: 1.02;
+}
+
+.staff4 img{
+    width: 20rem;
+    height: 25rem;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.staff4 img:hover{
+    scale: 1.02;
+}
+
+.staff5 img{
+    width: 20rem;
+    height: 25rem;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.staff5 img:hover{
+    scale: 1.02;
+}
+
+.staff6 img{
+    width: 20rem;
+    height: 25rem;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.staff6 img:hover{
+    scale: 1.02;
+}
+
+footer{
+    background: #D92394;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover{
+    text-decoration: underline black;
+}
+
+.about-links{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+.contact-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact{
+    position: relative;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.home{
+    position: relative;
+    bottom: 2rem;
+}
+
+.location{
+    position: relative;
+    bottom: 20px;
+    left: 2rem;
+}
+
+
+.logo2 a{
+    font-size: 1.2rem;
+    background-color: white;
+    border-radius: 70%;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    color: #f6099b;
+    text-decoration: none;
+    position: relative;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.to-top{
+    font-size: 3rem;
+    /* color: #f6099b; */
+    color: black;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.to-top.active{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+@media (min-width: 320px) and (max-width: 420px){
+    .nav-toggle{
+        cursor: pointer;
+        position: relative;
+        left: 20rem;
+        /* top: 10px; */
+        z-index: 1;
+    }
+
+    .bar{
+        display: block;
+        background: white;
+        margin: 5px auto;
+        position: relative;
+        right: 20rem;
+        top: 20px;
+        width: 25px;
+        height: 3px;
+    }
+
+    #nav-bars{
+        display: none;
+        flex-direction: column;
+        left: 2rem;
+        top: 2rem;
+        background: #d92393b6;
+        height: 60vh;
+        width: 30vh;
+        justify-content: center;
+        padding: 5rem 0;
+        align-items: center;
+        position: absolute;
+        /* padding: 2rem; */
+        /* gap: 2rem; */
+        /* text-align: center; */
+    }
+
+    .about-li{
+        position: relative;
+        top: 2rem;
+        right: 3rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .link{
+        position: relative;
+        left: 2.5rem;
+    }
+
+    .home2{
+        position: relative;
+        left: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    #nav-bars.active{
+        display: block;
+    }
+
+    .nav-toggle.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .nav-toggle.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .nav-toggle.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #nav-bars li .dropdown{
+        display: none;
+        position: absolute;
+        top: 3rem;
+        z-index: 1;
+        background-color: #7e0b52c4;
+        text-align: center;
+        width: 8rem;
+    }
+
+    #nav-bars li .click{
+        display: none;
+        position: absolute;
+        top: 3rem;
+        z-index: 1;
+        background-color: #7e0b52cd;
+        text-align: center;
+        width: 8rem;
+    }
+
+    .staff1 img, .staff2 img, .staff3 img, .staff4 img, .staff5 img, .staff6 img{
+        width: 15rem;
+        height: 25rem;
+        border-radius: 10px;
+        transition: 0.3s ease;
+    }
+
+    .team-container{
+        grid-template-columns: 500px;
+        left: 0;
+        z-index: -1;
+    }
+
+    .team h2{
+        font-size: 2rem;
+    }
+
+    footer{
+        flex-direction: column;
+        width: 100%;
+        padding: 50px;
+    }
+
+    .logo2 a{
+        position: relative;
+        right: 20px;
+    }
+
+    .contact-links{
+        margin-top: 3rem;
+        position: relative;
+        right: 2.5rem;
+    }
+
+    .home{
+        position: relative;
+        top: 5px;
+        right: 20px;
+        margin-bottom: 2rem;
+    }
+
+    .about-links{
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 421px) and (max-width: 500px){
+    .nav-toggle{
+        cursor: pointer;
+        position: relative;
+        left: 20rem;
+        /* top: 10px; */
+        z-index: 1;
+    }
+
+    .bar{
+        display: block;
+        background: white;
+        margin: 5px auto;
+        position: relative;
+        right: 21rem;
+        top: 20px;
+        width: 25px;
+        height: 3px;
+    }
+
+    #nav-bars{
+        display: none;
+        flex-direction: column;
+        left: 2rem;
+        top: 2rem;
+        background: #d92393b6;
+        height: 60vh;
+        width: 30vh;
+        justify-content: center;
+        padding: 5rem 0;
+        align-items: center;
+        position: absolute;
+        /* padding: 2rem; */
+        /* gap: 2rem; */
+        /* text-align: center; */
+    }
+
+    .about-li{
+        position: relative;
+        top: 2rem;
+        right: 3rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .link{
+        position: relative;
+        left: 2.5rem;
+    }
+
+    .home2{
+        position: relative;
+        left: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    #nav-bars.active{
+        display: block;
+    }
+
+    .nav-toggle.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .nav-toggle.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .nav-toggle.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #nav-bars li .dropdown{
+        display: none;
+        position: absolute;
+        top: 3rem;
+        z-index: 1;
+        background-color: #7e0b52c4;
+        text-align: center;
+        width: 8rem;
+    }
+
+    #nav-bars li .click{
+        display: none;
+        position: absolute;
+        top: 3rem;
+        z-index: 1;
+        background-color: #7e0b52cd;
+        text-align: center;
+        width: 8rem;
+    }
+
+    .staff1 img, .staff2 img, .staff3 img, .staff4 img, .staff5 img, .staff6 img{
+        width: 22rem;
+        height: 25rem;
+        border-radius: 10px;
+        transition: 0.3s ease;
+    }
+
+    .team-container{
+        grid-template-columns: 500px;
+        left: 0;
+        z-index: -1;
+    }
+
+    .team h2{
+        font-size: 2rem;
+    }
+
+    footer{
+        flex-direction: column;
+        width: 100%;
+        padding: 50px;
+    }
+
+    .logo2 a{
+        position: relative;
+        right: 20px;
+    }
+
+    .contact-links{
+        margin-top: 3rem;
+        position: relative;
+        right: 2.5rem;
+    }
+
+    .home{
+        position: relative;
+        top: 5px;
+        right: 20px;
+        margin-bottom: 2rem;
+    }
+
+    .about-links{
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 600px){
+    .nav-toggle{
+        cursor: pointer;
+        position: relative;
+        left: 20rem;
+        /* top: 10px; */
+        z-index: 1;
+    }
+
+    .bar{
+        display: block;
+        background: white;
+        margin: 5px auto;
+        position: relative;
+        right: 25rem;
+        top: 20px;
+        width: 25px;
+        height: 3px;
+    }
+
+    #nav-bars{
+        display: none;
+        flex-direction: column;
+        left: 2rem;
+        top: 2rem;
+        background: #d92393b6;
+        height: 60vh;
+        width: 30vh;
+        justify-content: center;
+        padding: 5rem 0;
+        align-items: center;
+        position: absolute;
+        /* padding: 2rem; */
+        /* gap: 2rem; */
+        /* text-align: center; */
+    }
+
+    .about-li{
+        position: relative;
+        top: 2rem;
+        right: 3rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .link{
+        position: relative;
+        left: 2.5rem;
+    }
+
+    .home2{
+        position: relative;
+        left: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    #nav-bars.active{
+        display: block;
+    }
+
+    .nav-toggle.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .nav-toggle.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .nav-toggle.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #nav-bars li .dropdown{
+        display: none;
+        position: absolute;
+        top: 3rem;
+        z-index: 1;
+        background-color: #7e0b52c4;
+        text-align: center;
+        width: 8rem;
+    }
+
+    #nav-bars li .click{
+        display: none;
+        position: absolute;
+        top: 3rem;
+        z-index: 1;
+        background-color: #7e0b52cd;
+        text-align: center;
+        width: 8rem;
+    }
+
+    .staff1 img, .staff2 img, .staff3 img, .staff4 img, .staff5 img, .staff6 img{
+        width: 23rem;
+        height: 25rem;
+        border-radius: 10px;
+        transition: 0.3s ease;
+    }
+
+    .team-container{
+        grid-template-columns: 500px;
+        left: 0;
+        z-index: -1;
+        align-content: center;
+        place-items: center;
+    }
+
+    .team h2{
+        font-size: 2rem;
+    }
+
+    footer{
+        flex-direction: column;
+        width: 100%;
+        padding: 50px;
+    }
+
+    .logo2 a{
+        position: relative;
+        right: 20px;
+    }
+
+    .contact-links{
+        margin-top: 3rem;
+        position: relative;
+        right: 2.5rem;
+    }
+
+    .home{
+        position: relative;
+        top: 5px;
+        right: 20px;
+        margin-bottom: 2rem;
+    }
+
+    .about-links{
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 700px){
+    .nav-toggle{
+        cursor: pointer;
+        position: relative;
+        left: 20rem;
+        /* top: 10px; */
+        z-index: 1;
+    }
+
+    .bar{
+        display: block;
+        background: white;
+        margin: 5px auto;
+        position: relative;
+        right: 27rem;
+        top: 20px;
+        width: 25px;
+        height: 3px;
+    }
+
+    #nav-bars{
+        display: none;
+        flex-direction: column;
+        left: 2rem;
+        top: 2rem;
+        background: #d92393b6;
+        height: 60vh;
+        width: 30vh;
+        justify-content: center;
+        padding: 5rem 0;
+        align-items: center;
+        position: absolute;
+        /* padding: 2rem; */
+        /* gap: 2rem; */
+        /* text-align: center; */
+    }
+
+    .about-li{
+        position: relative;
+        top: 2rem;
+        right: 3rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .link{
+        position: relative;
+        left: 2.5rem;
+    }
+
+    .home2{
+        position: relative;
+        left: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    #nav-bars.active{
+        display: block;
+    }
+
+    .nav-toggle.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .nav-toggle.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .nav-toggle.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #nav-bars li .dropdown{
+        display: none;
+        position: absolute;
+        top: 3rem;
+        z-index: 1;
+        background-color: #7e0b52c4;
+        text-align: center;
+        width: 8rem;
+    }
+
+    #nav-bars li .click{
+        display: none;
+        position: absolute;
+        top: 3rem;
+        z-index: 1;
+        background-color: #7e0b52cd;
+        text-align: center;
+        width: 8rem;
+    }
+
+    .staff1 img, .staff2 img, .staff3 img, .staff4 img, .staff5 img, .staff6 img{
+        width: 23rem;
+        height: 25rem;
+        border-radius: 10px;
+        transition: 0.3s ease;
+    }
+
+    .team-container{
+        grid-template-columns: 500px;
+        left: 2rem;
+        z-index: -1;
+        align-content: center;
+        place-items: center;
+    }
+
+    .team h2{
+        font-size: 2rem;
+    }
+
+    footer{
+        flex-direction: column;
+        width: 100%;
+        padding: 50px;
+    }
+
+    .logo2 a{
+        position: relative;
+        right: 20px;
+    }
+
+    .contact-links{
+        margin-top: 3rem;
+        position: relative;
+        right: 2.5rem;
+    }
+
+    .home{
+        position: relative;
+        top: 5px;
+        right: 20px;
+        margin-bottom: 2rem;
+    }
+
+    .about-links{
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 767px){
+    .nav-toggle{
+        cursor: pointer;
+        position: relative;
+        left: 20rem;
+        /* top: 10px; */
+        z-index: 1;
+    }
+
+    .bar{
+        display: block;
+        background: white;
+        margin: 5px auto;
+        position: relative;
+        right: 15rem;
+        top: 20px;
+        width: 25px;
+        height: 3px;
+    }
+
+    #nav-bars{
+        display: none;
+        flex-direction: column;
+        left: 17rem;
+        top: 2rem;
+        background: #d92393b6;
+        height: 60vh;
+        width: 30vh;
+        justify-content: center;
+        padding: 5rem 0;
+        align-items: center;
+        position: absolute;
+        /* padding: 2rem; */
+        /* gap: 2rem; */
+        /* text-align: center; */
+    }
+
+    .about-li{
+        position: relative;
+        top: 2rem;
+        right: 3rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .link{
+        position: relative;
+        left: 2.5rem;
+    }
+
+    .home2{
+        position: relative;
+        left: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    #nav-bars.active{
+        display: block;
+    }
+
+    .nav-toggle.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .nav-toggle.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .nav-toggle.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #nav-bars li .dropdown{
+        display: none;
+        position: absolute;
+        top: 3rem;
+        z-index: 1;
+        background-color: #7e0b52c4;
+        text-align: center;
+        width: 8rem;
+    }
+
+    #nav-bars li .click{
+        display: none;
+        position: absolute;
+        top: 3rem;
+        z-index: 1;
+        background-color: #7e0b52cd;
+        text-align: center;
+        width: 8rem;
+    }
+
+    .staff1 img, .staff2 img, .staff3 img, .staff4 img, .staff5 img, .staff6 img{
+        width: 23rem;
+        height: 25rem;
+        border-radius: 10px;
+        transition: 0.3s ease;
+    }
+
+    .team-container{
+        grid-template-columns: 500px;
+        left: 5rem;
+        z-index: -1;
+        align-content: center;
+        place-items: center;
+    }
+
+    .team h2{
+        font-size: 2rem;
+    }
+
+    footer{
+        flex-direction: column;
+        width: 100%;
+        padding: 50px;
+    }
+
+    .logo2 a{
+        position: relative;
+        right: 20px;
+    }
+
+    .contact-links{
+        margin-top: 3rem;
+        position: relative;
+        right: 2.5rem;
+    }
+
+    .home{
+        position: relative;
+        top: 5px;
+        right: 20px;
+        margin-bottom: 2rem;
+    }
+
+    .about-links{
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 912px){
+    .team-container{
+        grid-template-columns: repeat(2, 350px);
+        left: 0;
+        align-content: center;
+        place-items: center;
+    }
+
+    .team h2{
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 913px) and (max-width: 1024px){
+    .team-container{
+        grid-template-columns: repeat(2, 350px);
+        left: 5rem;
+        align-content: center;
+        place-items: center;
+    }
+
+    .team h2{
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1440px){
+    .team-container{
+        grid-template-columns: repeat(3, 350px);
+        left: 5rem;
+        align-content: center;
+        place-items: center;
+    }
+
+    .team h2{
+        font-size: 2rem;
+    }
+}
