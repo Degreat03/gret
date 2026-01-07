@@ -129,7 +129,7 @@ header{
 
 .map-container{
     position: absolute;
-    top: 30rem;
+    top: 20rem;
     left: 10rem;
     display: flex;
     justify-content: center;
@@ -3060,5 +3060,6 @@ footer a:hover{
         margin: 0 2rem;
     }
 }
+
 
 
