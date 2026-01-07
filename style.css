@@ -383,7 +383,7 @@ header{
     display: grid;
     grid-template-columns: repeat(4, 250px);
     position: relative;
-    left: 20rem;
+    left: 8rem;
     gap: 2rem;
     margin: 40px 0;
 }
@@ -1954,4 +1954,5 @@ footer a:hover{
         left: 7rem;
     }
 }
+
 
