@@ -127,6 +127,13 @@ header{
    font-size: 4rem;
 }
 
+.location h2{
+    text-align: center;
+    position: relative;
+    top: 10rem;
+    color: #b72780;
+   font-size: 4rem;
+}
 .map-container{
     position: absolute;
     top: 20rem;
@@ -3060,6 +3067,7 @@ footer a:hover{
         margin: 0 2rem;
     }
 }
+
 
 
 
