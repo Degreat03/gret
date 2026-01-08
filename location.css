@@ -909,7 +909,7 @@ footer a:hover{
     .map-content{
         width: 20rem;
         position: relative;
-        margin-right: 2rem;
+        margin-right: 4rem;
         margin-top: 2rem;
         height: 17rem;
     }
@@ -3133,4 +3133,5 @@ footer a:hover{
     .form button{
         margin: 0 2rem;
     }
+
 }
